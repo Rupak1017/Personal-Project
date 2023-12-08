@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+</head>
+<body>
+    <section>
+        <header>
+            <!-- video tag -->
+            <video src="/images/videoo.mp4" muted autoplay loop></video>
+            <nav>
+                <div class="logo">
+                    <h2><%= user.username%></h2>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                   
+                    
+
+                    
+                </ul>
+
+                <ul> 
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">
+                            <i class="fas fa-user-circle fa-xl"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <p class="custom-paragraph"><i class="fa-solid fa-user"></i>
+                                <%= user.fullname%></p>
+                            <p class="custom-paragraph"><i class="fa-regular fa-envelope "></i> <%= user.email%></p>
+                          <a href="/logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>  Logout</a>
+                        </div>
+                      </li>
+                    
+                </ul>
+                <!-- <div class="user-icon" id="userIcon" onclick="toggleDropdown()">
+                    <i class="fas fa-user-circle"></i>
+                </div> -->
+                           
+            </nav>
+            <div class="wrapper">
+                <h1>
+                    Planet Earth
+                </h1>
+                <p id="change">Earth, a celestial masterpiece, captivates with its breathtaking beauty.
+                    Vast oceans paint shades of blue, while lush forests and rolling hills showcase nature's
+                    artistry.
+                    Majestic mountains stand as monuments to time, and the diverse landscapes dance with color.
+                    From sunrise to sunset, Earth, with its unparalleled charm, is a testament to the wonders of our
+                    universe.</p>
+                <button onclick="changename()">Change the text</button>
+            </div>
+        </header>
+    </section>
+
+    <section class="cara">
+
+        <h1>Melody <br> <small>In the global orchestra, diverse nations compose unique melodies, weaving a harmonious
+                tapestry of cultural richness. </small></h1>
+        <div class="container">
+            <div id="slide">
+
+
+                <div class="item" style="background-image: url(/images/scotland.jpg);">
+                    <div class="contents">
+                        <div class="name">Scotland</div>
+                        <div class="des">Play The Music</div>
+                        <img src="/images/play.png" id="icon4" width="8%">
+                        <!-- audio tag -->
+                        <audio id="mySong4">
+                            <source src="/images/scotland.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(/images/india.jpeg);">
+                    <div class="contents">
+                        <div class="name">India</div>
+                        <div class="des">Play The Music</div>
+                        <img src="/images/play.png" id="icon" width="8%">
+                        <audio id="mySong">
+                            <source src="/images/Flute.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(/images/japann.jpg);">
+                    <div class="contents">
+                        <div class="name">Japan</div>
+                        <div class="des">Play The Music</div>
+                        <img src="/images/play.png" id="icon2" width="8%">
+                        <audio id="mySong2">
+                            <source src="/images/japan.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(/images/mexico.jpg);">
+                    <div class="contents">
+                        <div class="name">Mexico</div>
+                        <div class="des">Play The Music</div>
+                        <img src="/images/play.png" id="icon3" width="8%">
+                        <audio id="mySong3">
+                            <source src="/images/salsa.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+            <div class="buttonss">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- <img src="https://picsum.photos/id/1/500/300" /> -->
+                    <h3>"In the heart of adversity lies opportunity.
+                        Strive for excellence, and let your actions speak louder than words
+                       <br>
+                       <small>~APJ Abdul Kalam  
+                           </small>
+                   </h3>
+
+                </div>
+                <div class="swiper-slide">
+                    <!-- <img src="https://picsum.photos/id/1/500/300" /> -->
+                    <h3>Live as if you were to die tomorrow. Learn as if you were to live forever
+                        <br>
+                        <small>~Mahatma Gandhi</small>
+                    </h3>
+
+
+                </div>
+                <div class="swiper-slide">
+                    <!-- <img src="https://picsum.photos/id/1/500/300" /> -->
+                    <h3>The journey of a thousand miles begins with one step
+                        <br>
+                        <small>~Lao Tzu</small>
+                    </h3>
+
+
+                </div>
+                <div class="swiper-slide">
+                    <!-- <img src="https://picsum.photos/id/1/500/300" /> -->
+                    <h3>Everything you can imagine is real
+                        <br>
+                        <small>~Pablo Picasso</small>
+                    </h3>
+
+                </div>
+
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <div id="main">
+        <div id="top"></div>
+        <div id="center">
+            <div class="content">
+                <h4>Global Warming</h4>
+                <h3><i>Climate Change </i> is real <i>affecting</i> our enivornment .</h3>
+
+
+                <div class="containment">
+                    <div class="panel active" style="background-image: url('/images/melt.jpg')">
+                        <h3>Melting Icebergs</h3>
+                    </div>
+                    <div class="panel" style="background-image: url('/images/ff.avif')">
+                        <h3>Forest Fires</h3>
+                    </div>
+                    <div class="panel"
+                        style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80')">
+                        <h3>Extreme Weather</h3>
+                    </div>
+                    <div class="panel" style="background-image: url('/images/bio.avif')">
+                        <h3>Loss of Bio Diversity</h3>
+                    </div>
+                    <div class="panel"
+                        style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+                        <h3>Permafrost Thaw</h3>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="bottom"> </div>
+    </div>
+    <section class="quizzz">
+        <div class="rolling">
+            <h1> <i>Let Us Play The Quiz</i> </h1>
+        </div>
+
+        <div class="start_btn">
+            <button>Play Quiz</button>
+        </div>
+
+        <!--  Info Box  -->
+        <div class="info_box">
+            <div class="info_title">
+                <span>Rules Of Quiz</span>
+            </div>
+            <div class="info_list">
+                <div class="info">
+                    1. You only have <span>15 seconds</span> for each question
+                </div>
+
+                <div class="info">
+                    2. When you select an answer, you cannot select another.
+                </div>
+
+                <div class="info">
+                    3. You will not be able to select any answers if the time runs out.
+                </div>
+
+                <div class="info">
+                    4. You cannot leave the Quiz while playing.
+                </div>
+
+                <div class="info">
+                    5. For each correct answer, you will earn 1 point.
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Leave</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">
+                    Quiz
+                </div>
+                <div class="timer">
+                    <div class="time_text">
+                        Remaining
+                    </div>
+
+                    <div class="timer_sec">
+                        15
+                    </div>
+                </div>
+
+                <div class="time_line"></div>
+
+
+            </header>
+            <section>
+                <div class="que_text">
+                    <!-- <span> First Que? </span> -->
+                </div>
+
+                <div class="option_list">
+
+
+
+                </div>
+
+                <footer>
+                    <div class="total_que">
+                        <!-- <span><p>2</p>of<p>5</p>Questions</span> -->
+                    </div>
+                    <button class="next_btn">Next</button>
+                </footer>
+        </div>
+
+    </section>
+
+    <!-- Quiz Box Footer -->
+
+
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+
+        <div class="complete_text">
+            You Completed the Quiz!
+        </div>
+
+        <div class="score_text">
+            <!-- <span>and sorry, you got only <p>2</p> out of<p>5</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Restart</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+
+
+    </section>
+
+    <section class="contactme">
+
+        <div class="contactinfo">
+            <video src="/images/Digital World Map.mp4" muted autoplay loop></video>
+            <h1>
+                Any Questions? Ask Our AI ChatBot!
+                <small> We would love to hear feedback from you </small>
+
+            </h1>
+            <button>Hover Here</button>
+
+        </div>
+
+
+        <div class="contactform">
+            <form action="/send-email" method="post" id="form">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" name="name" placeholder="Your Name..." required>
+                <input type="email" name="email" placeholder="Your Email..." required>
+                <input type="text" name="phone" placeholder="Your Phone No..." required>
+                <textarea name="message" rows="2" placeholder="Your Message..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.5925774944044!2d-87.62601409682003!3d41.83707049378535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c72db0430f1%3A0x64a3cbcaa511dc28!2sRettaliata%20Engineering%20Center%20(E-1%20Building)!5e0!3m2!1sen!2sus!4v1701984347066!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+
+    <footer class="last">
+        <div class="contact-social">
+            © 2023 Rupak Potdukhe
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <a href="https://www.instagram.com/rpk_7/" class="fa fa-instagram" style="margin-left: 20px;"></a>
+            <a href="https://www.facebook.com/rupak.potdukhe/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+
+         
+           
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>  -->
+    <!-- gsap -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- gsap scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+
+
+
+    <script src="/javascripts/script.js"></script>
+    <script src="/javascripts/script2.js"></script>
+    <script src="/javascripts/question.js"></script>
+
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "b_GT3Dnpo2eaHaxPDNRbv",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="b_GT3Dnpo2eaHaxPDNRbv" domain="www.chatbase.co" defer>
+    </script>
+    
+</body>
+</html>
